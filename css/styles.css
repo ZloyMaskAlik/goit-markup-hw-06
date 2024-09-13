@@ -8,6 +8,37 @@ body {
 ul,
 ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 a {
@@ -15,31 +46,74 @@ a {
     text-decoration: none;
 }
 
+.padding-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 button {
     cursor: pointer;
 }
+
+img {
+    display: block;
+}
+
 /* ================ /COMMON STYLES ================ */
 
 /* ================ HEADER STYLES ================ */
-.logo{
+
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+  }
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;}
+    color: #4d5ae5;
+}
+
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
 
 .header-logo .logo-part {
     color: #2e2f42;
  }   
 
- .menu-list-link{
+ .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+ .menu-list-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
- }
+}
 
 .menu-list-link:hover,
 .menu-list-link:focus,
@@ -49,11 +123,20 @@ button {
     color: #404bbf;
 }
 
-.contacts{
+.contacts {
     font-style: normal;
+    margin-left: auto;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .contacts-list-link{
+    display: block;
+    padding: 24px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -64,9 +147,16 @@ button {
 /* ================ HERO SECTION ================ */
 .hero-section{
     background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
-.hero-title{
+.hero-title {
+    display: block;
+    max-width: 496px;
+    padding-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -75,6 +165,13 @@ button {
 }
 
 .order-servise-button {
+    display: block;
+    border: 0px;
+    border-radius: 4px;
+    min-width: 169px;
+    padding: 16px 0;
+    margin-left: auto;
+    margin-right: auto;
     background: #4d5ae5;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -83,16 +180,26 @@ button {
     color: #fff;
 }
 .order-servise-button:hover,
-.order-servise-button:focus{
+.order-servise-button:focus {
     background: #404bbf;
 }
 
-.principles-list-title{
+.principles-list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.principles-list-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.principles-list-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-bottom: 8px;
 }
 
 .principles-list-text {
@@ -100,12 +207,14 @@ button {
     letter-spacing: 0.02em;
     }
 
-.team-section{
+.team-section {
     background: #f4f4fd;
 }
 
 .team-title,
 .portfolio-title {
+    display: block;
+    padding-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -114,19 +223,39 @@ button {
     text-transform: capitalize;
 }
 
+.team-list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.team-list-item {
+    width: calc((100% - 72px) / 4);
+    text-align: center;
+    background-color: #FFFFFF;
+    width: calc((100% - 48px) / 3);
+    text-align: center;
+}
+
+.team-list-img,
+.portfolio-list-img {
+    margin-bottom: 32px;
+}
+
 .team-list-fullname,
-.portfolio-list-appname{
+.portfolio-list-appname {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-list-text,
-.portfolio-list-text{
+.portfolio-list-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 32px;
 }
 
 .portfolio-title {
@@ -138,22 +267,46 @@ button {
     text-transform: capitalize;
 }
 
-.team-list-item{
-background-color: #FFFFFF
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px ;
+}
+
+.portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.portfolio-list-appname,
+.portfolio-list-text {
+    margin-left: 16px;
 }
 
 /* ================ /HERO SECTION ================ */
 
 /* ================ FOOTER STYLES ================ */
 
-.page-footer{
+.page-footer {
     background-color: #2e2f42;
 }
+
+.footer-container {
+    margin-top: 100px;
+}
+.footer-logo {
+    display: block;
+    margin-bottom: 8px;
+}
+
 .footer-logo .logo-part {
     color: #f4f4fd;
 }
 
-.page-footer-text{
+.page-footer-text {
+    display: block;
+    max-width: 264px;
+    margin-bottom: 100px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
