@@ -232,11 +232,11 @@ img {
     width: calc((100% - 72px) / 4);
     text-align: center;
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .container-name{
     padding: 32px 0;
-    border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-fullname,
@@ -286,14 +286,12 @@ img {
 
 .page-footer {
     background-color: #2e2f42;
+    padding: 100px
 }
 
-.footer-container {
-    margin-top: 100px;
-}
 .footer-logo {
-    display: block;
-    margin-bottom: 8px;
+    display: inline-block;
+    margin-bottom: 16px
 }
 
 .footer-logo .logo-part {
@@ -303,7 +301,6 @@ img {
 .page-footer-text {
     display: block;
     max-width: 264px;
-    margin-bottom: 100px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
