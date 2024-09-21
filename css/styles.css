@@ -505,7 +505,8 @@ align-items: baseline
     background-color: #31D0AA;
 }
 
-.footer-list-icon {
-    fill: none;
+.footer-list-icon,
+.team-list-icon {
+    fill:#f4f4fd;
 }
 /* ================ /FOOTER STYLES ================ */
