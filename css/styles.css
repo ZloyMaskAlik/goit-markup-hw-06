@@ -189,6 +189,8 @@ img {
     rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
     url('../images/header/people-office.jpg');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-title {
@@ -268,7 +270,8 @@ img {
         
 .team-icons {
     display: flex;
-    justify-content: space-around;
+    gap: 24px;
+    justify-content: center;
 }
 
 .team-icons-link {
@@ -285,7 +288,7 @@ img {
 }
 
 .team-icons-link:hover,
-.team-icons-link:active {
+.team-icons-link:focus {
     background-color: #404bbf;
 }
 
@@ -315,6 +318,7 @@ img {
     text-align: center;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .container-name{
