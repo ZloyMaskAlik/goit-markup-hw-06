@@ -410,7 +410,6 @@ img {
 /* ================ FOOTER STYLES ================ */
 
 .page-footer {
-    display: flex;
     background-color: #2e2f42;
     padding: 100px 0;
     max-width: 1440px;
@@ -419,9 +418,14 @@ img {
 }
 
 .footer-container{
-margin-left: 156px;
-margin-right: 122px;
+display: flex;
+align-items: baseline
 }
+
+.container-logo {
+    margin-right: 120px;
+}
+
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px
