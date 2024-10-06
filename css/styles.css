@@ -999,13 +999,14 @@ color: #404bbf;
 
 
 .footer-container{
-    padding-left: 0;
+    padding-left: 15px;
     }
+
 
 .page-footer-text {
    margin-bottom: 0;
    margin-right: 120px;
-}
+ }
 .footer-email {
     margin-left: auto;
 }
@@ -1016,8 +1017,6 @@ color: #404bbf;
 }
 
 /* ================ /FOOTER STYLES ================ */
-
-
 /* ================ MODAL WINDOW STYLES ================ */
 .backdrop {
     position: fixed;
