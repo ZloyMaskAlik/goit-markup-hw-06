@@ -50,6 +50,83 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24px" height="24px">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="mobile-menu is-open" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="menu-close-btn" type="button" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+            <nav class="menu-nav">
+              <ul class="mobile-list">
+                <li class="mobile-list-item">
+                  <a class="mobile-list-link current" href="./index.html">Studio</a>
+                </li>
+                <li class="mobile-list-item">
+                  <a class="mobile-list-link" href="">Portfolio</a>
+                </li>
+                <li class="mobile-list-item">
+                  <a class="mobile-list-link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="menu-contacts">
+              <ul class="contacts-mobile">
+                <li class="contacts-mobile-item">
+                  <a class="contacts-mobile-link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="contacts-mobile-item">
+                  <a class="contacts-mobile-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="mobile-container-social">
+                <ul class="mobile-icons">
+                <li class="mobile-icons-item">
+                  <a class="mobile-icons-link" href="">
+                    <svg
+                      class="mobile-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-icons-item">
+                  <a class="mobile-icons-link" href="">
+                    <svg
+                      class="mobile-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-icons-item">
+                  <a class="mobile-icons-link" href="">
+                    <svg
+                      class="mobile-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-icons-item">
+                  <a class="mobile-icons-link" href="">
+                    <svg class="mobile-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
       </div>
     </header>
     <main>
@@ -298,6 +375,7 @@
           </ul>
         </div>
       </section>
+      <!-- Portfolio -->
       <section class="portfolio-section padding-section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
@@ -444,11 +522,10 @@
             <li class="footer-icons-item">
               <a class="footer-icons-link" href="">
                 <svg
-                  class="footer-list-icon"
+                  class="footer-list-icons"
                   width="24"
                   height="24"
-                  fill="#f4f4fd"
-                >
+                 >
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -456,11 +533,10 @@
             <li class="footer-icons-item">
               <a class="footer-icons-link" href="">
                 <svg
-                  class="footer-list-icon"
+                  class="footer-list-icons"
                   width="24"
                   height="24"
-                  fill="#f4f4fd"
-                >
+                 >
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -468,18 +544,17 @@
             <li class="footer-icons-item">
               <a class="footer-icons-link" href="">
                 <svg
-                  class="footer-list-icon"
+                  class="footer-list-icons"
                   width="24"
                   height="24"
-                  fill="#f4f4fd"
-                >
+                 >
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-icons-item">
               <a class="footer-icons-link" href="">
-                <svg class="footer-list-icon" width="24" height="24">
+                <svg class="footer-list-icons" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -594,8 +669,10 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
+              <span class="review-form-custom-checkbox-text"> 
+                I accept the terms and conditions of the
               <a class="review-form-policy-link" href=""> Privacy Policy </a>
+            </span>
             </label>
           </div>
           <button class="review-form-submit-btn" type="submit">Send</button>
@@ -603,5 +680,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

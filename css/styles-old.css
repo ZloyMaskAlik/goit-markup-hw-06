@@ -1,0 +1,115 @@
+
+
+
+/* ================ /COMMON STYLES ================ */
+
+/* ================ HEADER STYLES ================ */
+.contacts {
+    font-style: normal;
+    margin-left: auto;
+
+}
+
+
+
+
+/* ================ /HEADER STYLES ================ */
+
+/* ================ HERO SECTION ================ */
+   
+
+.team-list {
+     gap: 24px;
+}
+
+
+.team-list-item {
+    width: calc((100% - 72px) / 4);
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-list-appname {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.container-portfolio-img {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    width: 360px;
+    overflow: hidden;
+}
+
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-list-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+ }
+
+
+/* ================ /HERO SECTION ================ */
+
+/* ================ FOOTER STYLES ================ */
+
+
+
+.footer-container{
+    display: flex;
+    align-items: baseline
+}
+
+.container-logo {
+    margin-right: 120px;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px
+}
+
+
+
+.footer-form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 24px;
+}
+
+/* ================ /FOOTER STYLES ================ */
+
+/* ================ MODAL WINDOW STYLES ================ */
+
+
+.modal {
+  
+    min-height: 584px;
+    padding: 24px;}
+  
+.modal-slogan {
+    max-width: 360px;
+}
+
+.container-field {
+    margin-bottom: 16px;
+ }
+
